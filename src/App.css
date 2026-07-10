@@ -1,0 +1,465 @@
+.protfolio {
+  background-color: white;
+}
+.navbar {
+  display: grid;
+  max-width: 100%;
+  height:80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+  align-items: center;
+}
+.Hero_section {
+  height: 90vh;
+  display: flex;
+  background-color: #f5df4e;
+  gap: 300px;
+}
+.MyImage {
+  width: 344px;
+  height: 344px;
+  margin-left: 40%;
+  margin-top: 50%;
+  border: beige;
+  border-radius: 61%;
+}
+.MyImage:hover {
+  transform: scale(1.03) rotate(0.5deg);
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.description {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+.description h1 {
+  color: black;
+  font-size: 44.32px;
+  font-weight: 300;
+}
+.description button {
+  color: #ffffff;
+  background-color: black;
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 112, 243, 0.3);
+  align-items: center;
+  margin: 90px 40px 0px;
+  padding: 12.8px 41.6px;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+Hero Container Layout 
+
+.Hero_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10%;
+  min-height: 80vh;
+  gap: 2rem;
+  background: #f5df4e;
+}
+
+.description button:hover {
+  background-color: rgba(255, 255, 255, 0.334);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 2px rgba(0, 112, 243, 0.4);
+}
+
+.description button:active {
+  transform: translateY(1);
+}
+
+.Container{
+  background-color:white;
+  max-height: 70mvh;
+}
+
+.Intro{
+  margin:5%;
+}
+.Intro span{
+  background-color: #f5df4e;
+  width:fit-content;
+}
+
+.about-container {
+  padding: 100px 0;
+  background-color:#f8f9fa;
+}
+
+.about-intro {
+  text-align: center;
+}
+
+.about-intro span {
+  color: #6c757d;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.about-description h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #0d6efd;
+}
+
+.about-details {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.about-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-details li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+
+.about-details li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.about-details strong {
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.about-details span,
+.about-details a {
+  color: #555;
+  text-decoration: none;
+}
+
+.about-details a:hover {
+  color: #0d6efd;
+}
+
+resume css
+
+.resume-section {
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title span {
+  color: #0d6efd;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.resume-column {
+  padding-right: 35px;
+}
+
+.experience-column {
+  border-left: 2px solid #e5e5e5;
+  padding-left: 35px;
+}
+
+.resume-heading {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.resume-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+}
+
+.resume-card h4 {
+  font-weight: 700;
+}
+
+.resume-card h6 {
+  color: #666;
+  margin: 10px 0;
+}
+
+.duration {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #0d6efd;
+  color: white;
+  font-size: 14px;
+}
+
+.resume-card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .Hero_section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2rem 5%;
+  }
+
+  .description {
+    align-items: center;
+  }
+
+  .description h1 {
+    font-size: 2.2rem;
+  }
+}
