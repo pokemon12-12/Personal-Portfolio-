@@ -1,86 +1,92 @@
 const education = [
   {
-    degree: "Bachelor of Computer Science & Engineering",
-    institute: "SAGE University, Indore",
-    duration: "2024 - Present",
-    description:
-      "Currently pursuing B.Tech in Computer Science with a strong focus on Web Development, Data Structures & Algorithms, and Full Stack Development.",
-    score: "CGPA : 8.1",
+    title: "B.Tech, Computer Science & Technology",
+    place: "Sage University, Indore",
+    date: "2024 - Present",
+    note: "CGPA: 8.41 / 10 | Current Semester (Sem 8) GPA: 8.01 / 10",
   },
   {
-    degree: "Higher Secondary Education",
-    institute: "Bihar School Examination Board",
-    duration: "2022 - 2024",
-    description:
-      "Completed higher secondary education with a strong foundation in Mathematics and Science.",
-    score: "",
+    title: "XII (CBSE)",
+    place: "Vidyapati Public School",
+    date: "Completed",
+    note: "68%",
   },
 ];
 
 const experience = [
   {
-    role: "Technical Team Member",
-    company: "SCYP Club",
-    duration: "2025 - Present",
-    description:
-      "Contributed to technical events, hackathons, and development activities while collaborating with the technical team.",
+    title: "Technical Team Member",
+    place: "SCYP, Sage University",
+    date: "Nov 2024 - Present",
+    note:
+      "Participated in Smart India Hackathon internal hackathon and Google's Generative AI program while contributing structured code documentation.",
   },
   {
-    role: "Google Developer Groups Member",
-    company: "GDG On Campus",
-    duration: "2025 - Present",
-    description:
-      "Actively participate in workshops, technical sessions, and collaborative projects focused on modern web technologies.",
+    title: "Trooper Tier",
+    place: "Generative AI Program, Google",
+    date: "Dec 2025",
+    note:
+      "Completed Google's Generative AI program and gained structured exposure to AI-assisted digital tools.",
   },
 ];
 
 const Resume = () => {
   return (
-    <section className="resume-section" id="resume">
+    <section className="section-block" id="resume">
       <div className="container">
-        <div className="section-title">
-          <span>Resume</span>
-          <h2>A Summary Of My Resume</h2>
+        <div className="section-header">
+          <p className="section-kicker">Resume</p>
+          <h2 className="section-title">Education and experience</h2>
         </div>
 
-        <div className="row mt-5">
-          {/* Education */}
-
-          <div className="col-lg-6 resume-column">
-            <h3 className="resume-heading">Education</h3>
-
-            {education.map((item) => (
-              <div className="resume-card" key={item.degree}>
-                <h4>{item.degree}</h4>
-
-                <span className="duration">{item.duration}</span>
-
-                <h6>{item.institute}</h6>
-
-                <p>{item.description}</p>
-
-                {item.score && <strong>{item.score}</strong>}
+        <div className="row g-4">
+          <div className="col-lg-6">
+            <div className="content-card">
+              <h3>Education</h3>
+              <div className="stack-list">
+                {education.map((item) => (
+                  <article key={item.title} className="stack-item">
+                    <h4>{item.title}</h4>
+                    <p className="stack-meta">
+                      {item.place} - {item.date}
+                    </p>
+                    <p>{item.note}</p>
+                  </article>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
 
-          {/* Experience */}
-
-          <div className="col-lg-6 resume-column experience-column">
-            <h3 className="resume-heading">Experience</h3>
-
-            {experience.map((item) => (
-              <div className="resume-card" key={item.role}>
-                <h4>{item.role}</h4>
-
-                <span className="duration">{item.duration}</span>
-
-                <h6>{item.company}</h6>
-
-                <p>{item.description}</p>
+          <div className="col-lg-6">
+            <div className="content-card">
+              <h3>Experience</h3>
+              <div className="stack-list">
+                {experience.map((item) => (
+                  <article key={item.title} className="stack-item">
+                    <h4>{item.title}</h4>
+                    <p className="stack-meta">
+                      {item.place} - {item.date}
+                    </p>
+                    <p>{item.note}</p>
+                  </article>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
+        </div>
+
+        <div className="content-card mt-4">
+          <h3>Achievements</h3>
+          <ul className="detail-list compact">
+            <li>
+              <span>LeetCode</span>
+              <strong>70+ DSA problems solved in C++</strong>
+            </li>
+            <li>
+              <span>Recognition</span>
+              <strong>Trooper Tier in Google's Generative AI Program</strong>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

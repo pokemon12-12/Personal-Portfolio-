@@ -1,37 +1,53 @@
-import styles from "./Skills.module.css";
-import { skills } from "../data/skills";
+const skillGroups = [
+  "HTML5",
+  "CSS3",
+  "JavaScript (ES6+)",
+  "C++",
+  "SQL",
+  "React.js",
+  "Redux",
+  "Redux Toolkit",
+  "React Router",
+  "Context API",
+  "React Hooks",
+  "Bootstrap",
+  "Tailwind CSS",
+  "Responsive Web Design",
+  "Node.js fundamentals",
+  "MongoDB",
+  "REST API Integration",
+  "Git",
+  "GitHub",
+  "Vercel",
+  "n8n",
+  "LLM API Integration",
+];
 
 const Skills = () => {
   return (
-    <section className={styles.skillsSection} id="skills">
+    <section className="section-block" id="skills">
       <div className="container">
-        <div className={styles.sectionTitle}>
-          <span>My Skills</span>
-          <h2>Technologies I Work With</h2>
+        <div className="section-header">
+          <p className="section-kicker">Skills</p>
+          <h2 className="section-title">Technologies I work with</h2>
         </div>
 
-        <div className="row gy-4 mt-5">
-          {skills.map((skill) => (
-            <div className="col-lg-6" key={skill.name}>
-              <div className={styles.skillCard}>
-                <div className={styles.skillInfo}>
-                  <span>{skill.name}</span>
-                  <span>{skill.percentage}%</span>
-                </div>
-
-                <div className={styles.progress}>
-                  <div
-                    className={styles.progressBar}
-                    style={{ width: `${skill.percentage}%` }}
-                  ></div>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="content-card">
+          <div className="skill-tags">
+            {skillGroups.map((skill) => (
+              <span key={skill} className="skill-tag">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
 
-        <div className="text-center mt-5">
-          <button className={styles.resumeBtn}>Download Resume</button>
+        <div className="content-card mt-4">
+          <h3>Currently learning</h3>
+          <p className="mb-0">
+            Next.js in progress, then TypeScript, while continuing to refine UI
+            clarity, accessibility, and production-ready frontend workflows.
+          </p>
         </div>
       </div>
     </section>

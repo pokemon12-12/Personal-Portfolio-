@@ -1,23 +1,25 @@
 import Navbar from "./Components/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 import Hero from "./Components/Hero";
 import AboutMe from "./Components/AboutMe";
+import Projects from "./Components/Projects";
 import Resume from "./Components/Resume";
 import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
+import "./App.css";
+
 function App() {
   return (
-    <>
-      <center className="protfolio">
-        <Navbar />
+    <div className="portfolio-shell">
+      <Navbar />
+      <main>
         <Hero />
-        <AboutMe/>
-        <Resume/>
-        <Skills/>
-        <Footer/>
-      </center>
-    </>
+        <AboutMe />
+        <Projects />
+        <Resume />
+        <Skills />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

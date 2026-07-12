@@ -1,43 +1,34 @@
 const Footer = () => {
   return (
-    <div class="container">
-      {" "}
-      <footer class="py-3 my-4">
-        {" "}
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          {" "}
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">
-              Home
+    <footer className="footer-block" id="contact">
+      <div className="container">
+        <div className="content-card footer-card">
+          <div>
+            <p className="section-kicker mb-2">Contact</p>
+            <h2 className="section-title mb-0">Let us build something useful</h2>
+          </div>
+
+          <div className="footer-links">
+            <a href="mailto:patelanish7872@gmail.com">patelanish7872@gmail.com</a>
+            <a
+              href="https://github.com/anishkumar-1212"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
             </a>
-          </li>{" "}
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">
-              Features
+            <a
+              href="https://www.linkedin.com/in/anish-patel-2822691ba"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
             </a>
-          </li>{" "}
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">
-              Pricing
-            </a>
-          </li>{" "}
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">
-              FAQs
-            </a>
-          </li>{" "}
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">
-              About
-            </a>
-          </li>{" "}
-        </ul>{" "}
-        <p class="text-center text-body-secondary">© 2025 Company, Inc</p>{" "}
-      </footer>{" "}
-    </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
-
-
 
 export default Footer;
